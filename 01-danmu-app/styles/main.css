@@ -21,15 +21,16 @@ input {
 .danmu .danmu-container {
     height: 500px;
     margin-bottom: 20px;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
+    border: 1px solid #aaaaaa;
 }
 
 .danmu .danmu-container .danmu-mask {
     width: 100%;
     height: 100%;
-    border: 1px solid #aaaaaa;
 }
+
 
 .danmu .danmu-control {
     width: 30%;
