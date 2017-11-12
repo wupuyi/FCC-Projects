@@ -1,0 +1,75 @@
+html,
+body {
+    height: 100%;
+}
+
+.clear-fix::before,
+.clear-fix::after {
+    content: " ";
+    display: table;
+}
+
+.clear-fix::after {
+    clear: both;
+}
+
+.clear-fix {
+    *zoom: 1;
+}
+
+body {
+    background-color: #779ade;
+    color: #779ade;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote .quote-container {
+    width: 450px;
+    padding: 40px 50px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.quote .quote-container .quote-content {
+    font-size: 1.75em;
+}
+
+.quote .quote-container .quote-content i {
+    font-size: 1.0em;
+}
+
+.quote .quote-container .quote-author {
+    text-align: right;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.quote .quote-container .buttons .button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #779ade;
+    color: #ffffff;
+}
+
+.quote .quote-container .buttons a {
+    float: left;
+}
+
+.quote .quote-container .buttons button {
+    border: none;
+    float: right;
+}
+
+.quote .footer {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.quote .footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
