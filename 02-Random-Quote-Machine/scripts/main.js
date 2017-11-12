@@ -13,22 +13,50 @@ var colors = [
     '#52FF9F'
 ];
 
-function openURL(url) {
-    window.open(url, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=' +
-            '0, resizable=0');
+//随机生成数字
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function getQuote() {
     $.ajax({
         headers: {
-            Accept : "application/json",
+            Accept: "application/json"
         },
         type: 'get',
         url: '../shiju.json',
-        success: function(data) {
-            
+        success: function (data) {
+            var myData = data.juzi;
+            var i = randomNum(0, (myData.length - 1));
+            $('.quote-content').animate({
+                opacity: '0'
+            }, 500, function () {
+                $(this).animate({
+                    opacity: '1'
+                }, 500);
+                $('#text').text(myData[i].content);
+            });
+            $('.quote-author').animate({
+                opacity: 0
+            }, 500, function () {
+                $(this).animate({
+                    opacity: 1
+                }, 500);
+                $('#author').html(myData[i].author);
+            });
+            var color = randomNum(0, (colors.length -1));
+            $('body').animate({
+                backgroundColor: colors[color],
+                color: colors[color]
+            }, 1000);
+            $('.button').animate({
+                backgroundColor: colors[color]
+            }, 1000);
         }
-    })
+    });
 }
-
-
+//加载时运行
+$(function () {
+    getQuote();
+    $('#new-quote').on('click', getQuote);
+});

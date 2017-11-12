@@ -48,21 +48,29 @@ body {
 
 .quote .quote-container .buttons .button {
     display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 8px 10px;
+    border-radius: 50%;
     background: #779ade;
     color: #ffffff;
 }
 
-.quote .quote-container .buttons a {
-    float: left;
+.quote .quote-container .buttons .button i {
+    font-size: 1.2em;
 }
 
 .quote .quote-container .buttons button {
     border: none;
     float: right;
+    -webkit-transition: font-size 0.5s;
+    -moz-transition: font-size 0.5s;
+    transition: font-size 0.5s;
 }
 
+.quote .quote-container .buttons button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 1.5em;
+}
 .quote .footer {
     color: #ffffff;
     text-align: center;

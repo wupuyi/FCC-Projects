@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random-Quote-Machine</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_472159_p70al6whyfrbe29.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_472159_z7cxv72j8257b9.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -16,18 +16,16 @@
         <div class="quote-container">
             <div class="quote-content">
                 <i class="iconfont icon-yinhao-copy"></i>
-                <span id="text">云想衣裳花相容，春风拂槛露华浓。 若非群玉山头见，会向瑶台月下逢。</span>
-                <!-- <span id="text"></span> -->
+                <!-- <span id="text">云想衣裳花相容，春风拂槛露华浓。 若非群玉山头见，会向瑶台月下逢。</span> -->
+                <span id="text"></span>
             </div>
             <div class="quote-author">
-                - <span id="author">李白</span>
-                <!-- - <span id="author"></span> -->
+                —<span id="author"></span>
+                <!-- <span id="author">李白</span> -->
             </div>
             <div class="buttons clear-fix">
-                <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-                    <i class="iconfont icon-tuite"></i>
-                </a>
-                <button class="button" id="new-quote">换一换</button>
+                <button class="button" id="new-quote">
+                <i class="iconfont icon-shuaxin"></i></button>
             </div>
         </div>
         <div class="footer">
@@ -37,6 +35,8 @@
     </div>
 
     <script src="scripts/jquery.js"></script>
+    <!-- 颜色动画不包含在核心 jQuery 库中。如果您想要应用动画颜色，您需要下载 颜色动画插件。 -->
+    <script src="scripts/jquery-ui.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
