@@ -6,4 +6,6 @@
 
 ## 02 Random-Quote
 
+[https://wupuyi.github.io/FCC-Projects/02-Random-Quote-Machine/](https://wupuyi.github.io/FCC-Projects/02-Random-Quote-Machine/)
+
 ## 
