@@ -18,8 +18,8 @@ body {
 }
 
 body {
-    background-color: #779ade;
-    color: #779ade;
+    background-color: #cccccc;
+    color: #cccccc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ body {
     display: inline-block;
     padding: 8px 10px;
     border-radius: 50%;
-    background: #779ade;
+    background: #cccccc;
     color: #ffffff;
 }
 

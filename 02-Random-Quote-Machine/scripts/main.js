@@ -1,16 +1,23 @@
 //颜色数组
 var colors = [
-    '#FFAE49',
-    '#FF9E28',
-    '#E8406D',
-    '#5828FF',
-    '#25D8E8',
-    '#78FF5E',
-    '#FFCA1C',
-    '#E85D35',
-    '#CE1CFF',
-    '#1A68E8',
-    '#52FF9F'
+    '#ef2e33',
+    '#779ade',
+    '#dcb0d1',
+    '#1a9789',
+    '#644591',
+    '#b160a2',
+    '#d5ee17',
+    '#d0273a',
+    '#f8ab2b',
+    '#ff634d',
+    '#d52e5c',
+    '#584245',
+    '#4e428a',
+    '#b0a3cf',
+    '#333b7a',
+    '#7ec4dd',
+    '#0089b5',
+    '#918b8b'
 ];
 
 //随机生成数字
@@ -24,7 +31,8 @@ function getQuote() {
             Accept: "application/json"
         },
         type: 'get',
-        url: '../shiju.json',
+        // url: 'https://github.com/wupuyi/FCC-Projects/tree/master/02-Random-Quote-Machine/shiju.json',
+        url: 'shiju.json',
         success: function (data) {
             var myData = data.juzi;
             var i = randomNum(0, (myData.length - 1));
