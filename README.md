@@ -8,4 +8,6 @@
 
 [https://wupuyi.github.io/FCC-Projects/02-Random-Quote-Machine/](https://wupuyi.github.io/FCC-Projects/02-Random-Quote-Machine/)
 
-## 
+## 03 Show the Local Weather
+
+[https://wupuyi.github.io/FCC-Projects/03-Show-the-Local-Weather/](https://wupuyi.github.io/FCC-Projects/03-Show-the-Local-Weather/)

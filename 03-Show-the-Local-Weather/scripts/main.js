@@ -92,9 +92,9 @@ function getCity(str) {
         }
         //查询省份index
         proNum = arr.indexOf(str);
-        console.log(proNum);
+        // console.log(proNum);
         citys = provinces[proNum]['citys'];
-        console.log(citys);
+        // console.log(citys);
         for (var j = 0; j < citys.length; j++) {
             selectVal = citys[j]['citysName'];
             addOption('#citySelect', selectVal);
@@ -106,8 +106,11 @@ function getCity(str) {
 $(function () {
     getProvince();
     getCity('河北省');
-    // var myCity = new BMap.LocalCity(); myCity.get(function(r) {     var cityname
-    // = r.name;     getWeather(cityname); })
+    var myCity = new BMap.LocalCity();
+    myCity.get(function (r) {
+        var cityname = r.name;
+        getWeather(cityname);
+    })
     $('#proSelect').change(function () {
         var val = $('#proSelect').val();
         getCity(val);
