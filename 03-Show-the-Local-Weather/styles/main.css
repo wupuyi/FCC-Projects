@@ -1,0 +1,110 @@
+html,
+body {
+    height: 100%;
+}
+
+.now,
+.today,
+.future {
+    height: 100%;
+}
+
+
+/*当前天气*/
+
+.now .now-banner {
+    text-align: center;
+}
+
+.now .now-banner img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+}
+
+.now .now-banner h1 {
+    font-weight: normal;
+}
+
+.now .now-content {
+    margin: 20px 40px 0px 40px;
+}
+
+.now .now-content h2 {
+    display: inline-block;
+    border-left: 5px solid #aeecff;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+.now .now-content p {
+    margin: 15px 0 0 13px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/*今日天气*/
+
+.today {
+    background-image: url("../images/today-bg5.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.today .today-header,
+.today .today-content {
+    margin: 0px 40px;
+}
+
+.today .today-header {
+    text-align: center;
+}
+
+.today .today-header h2 {
+    padding: 20px 0;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ffffff;
+}
+
+.today .today-content {
+    padding-top: 20px;
+}
+
+
+/*未来天气*/
+
+.future {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.future .future-item {
+    align-self: center;
+    padding: 10px;
+    width: 30%;
+}
+
+.future .future-item:nth-child(odd) {
+    background: #fcd9c5;
+}
+
+.future .future-item h2 {
+    font-weight: normal;
+    border-left: 3px solid #5acff3;
+    padding-left: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .future .future-item {
+        padding: 20px;
+        width: 100%;
+    }
+}
