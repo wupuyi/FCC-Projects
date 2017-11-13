@@ -103,6 +103,16 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .now .now-banner {
+        text-align: center;
+    }
+    .now .now-banner img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+
     .future .future-item {
         padding: 20px;
         width: 100%;

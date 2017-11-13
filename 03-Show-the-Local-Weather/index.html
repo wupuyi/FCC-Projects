@@ -17,11 +17,22 @@
         <div class="now-banner">
             <img src="images/tianqi.png" alt="logo">
             <h1>一起看看天气吧</h1>
+            <div class="city-select">
+                <label>
+                    其他城市：
+                    <select id="proSelect">
+                    </select>
+                    &nbsp;&nbsp;
+                    <select id="citySelect">
+                        <option value="">请选择城市</option>
+                    </select>
+                </label>
+            </div>
         </div>
         <div class="now-content">
             <h2>实时天气</h2>
             <p>
-                <i class="iconfont icon-icon"></i>所在城市：
+                <i class="iconfont icon-icon"></i>当前城市：
                 <span id="now-city"></span>
             </p>
             <p>
@@ -50,109 +61,121 @@
         <div class="today-header">
             <h2>今日天气</h2>
             <p>
-                <span id="today-city">商洛</span> |
-                <span id="today-date">2017年11月13日</span> |
-                <span id="today-week">星期一</span>
+                <span id="today-city"></span> |
+                <span id="today-date"></span> |
+                <span id="today-week"></span>
             </p>
             <p>
-                <span id="today-tmp">2℃~15℃</span> |
-                <span id="today-wind">西北风微风</span>
+                <span id="today-tmp"></span> |
+                <span id="today-wind"></span>
             </p>
         </div>
         <div class="today-content">
 
             <p>
                 <i class="iconfont icon-yifu"></i> 穿衣指数：
-                <span id="today-dress-index">较冷</span>
+                <span id="today-dress-index"></span>
             </p>
             <p>
                 <i class="iconfont icon-tishi"></i> 穿衣建议：
-                <span id="today-dress-advice">建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。</span>
+                <span id="today-dress-advice"></span>
             </p>
             <p>
                 <i class="iconfont icon-ultraviolet"></i> 紫外线强度：
-                <span id="today-uv">中等</span>
+                <span id="today-uv"></span>
             </p>
             <p>
                 <i class="iconfont icon-xiche"></i> 洗车指数：
-                <span id="today-wash">较适宜</span>
+                <span id="today-wash"></span>
             </p>
             <p>
                 <i class="iconfont icon-lvxing"></i> 旅行指数：
-                <span id="today-travel">较适宜</span>
+                <span id="today-travel"></span>
             </p>
             <p>
                 <i class="iconfont icon-jianshen"></i> 锻炼指数:
-                <span id="today-exercise">较适宜</span>
+                <span id="today-exercise"></span>
             </p>
         </div>
 
     </div>
     <div class="future">
         <div class="future-item">
-            <h2 class="future-data" id="future-data0">2017年11月14日</h2>
-            <p class="future-week" id="future-week0">星期二</p>
+            <h2 class="future-data" id="future-data0"></h2>
+            <p class="future-week" id="future-week0"></p>
             <p class="future-weather">天气：
-                <span id="future-weather0">多云</span>
+                <span id="future-weather0"></span>
             </p>
-            <p class="future-temp">气温：<span id="future-temp0">2℃~14℃</span></p>
+            <p class="future-temp">气温：
+                <span id="future-temp0"></span>
+            </p>
             <p class="future-wind">风力：
-                <span id="future-wind0">南风微风</span>
+                <span id="future-wind0"></span>
             </p>
         </div>
         <div class="future-item">
-            <h2 class="future-data" id="future-data1">2017年11月14日</h2>
-            <p class="future-week" id="future-week1">星期二</p>
+            <h2 class="future-data" id="future-data1"></h2>
+            <p class="future-week" id="future-week1"></p>
             <p class="future-weather">天气：
-                <span id="future-weather1">多云</span>
+                <span id="future-weather1"></span>
             </p>
-            <p class="future-temp">气温：<span id="future-temp1">2℃~14℃</span></p>
+            <p class="future-temp">气温：
+                <span id="future-temp1"></span>
+            </p>
             <p class="future-wind">风力：
-                <span id="future-wind1">南风微风</span>
+                <span id="future-wind1"></span>
             </p>
         </div>
         <div class="future-item">
-            <h2 class="future-data" id="future-data2">2017年11月14日</h2>
-            <p class="future-week" id="future-week2">星期二</p>
+            <h2 class="future-data" id="future-data2"></h2>
+            <p class="future-week" id="future-week2"></p>
             <p class="future-weather">天气：
-                <span id="future-weather2">多云</span>
+                <span id="future-weather2"></span>
             </p>
-            <p class="future-temp">气温：<span id="future-temp2">2℃~14℃</span></p>
+            <p class="future-temp">气温：
+                <span id="future-temp2"></span>
+            </p>
             <p class="future-wind">风力：
-                <span id="future-wind2">南风微风</span>
+                <span id="future-wind2"></span>
             </p>
         </div>
         <div class="future-item">
-            <h2 class="future-data" id="future-data3">2017年11月14日</h2>
-            <p class="future-week" id="future-week3">星期二</p>
+            <h2 class="future-data" id="future-data3"></h2>
+            <p class="future-week" id="future-week3"></p>
             <p class="future-weather">天气：
-                <span id="future-weather3">多云</span>
+                <span id="future-weather3"></span>
             </p>
-            <p class="future-temp">气温：<span id="future-temp3">2℃~14℃</span></p>
+            <p class="future-temp">气温：
+                <span id="future-temp3"></span>
+            </p>
             <p class="future-wind">风力：
-                <span id="future-wind3">南风微风</span>
+                <span id="future-wind3"></span>
             </p>
         </div>
         <div class="future-item">
-            <h2 class="future-data" id="future-data4">2017年11月14日</h2>
-            <p class="future-week" id="future-week4">星期二</p>
+            <h2 class="future-data" id="future-data4"></h2>
+            <p class="future-week" id="future-week4"></p>
             <p class="future-weather">天气：
-                <span id="future-weather4">多云</span>
+                <span id="future-weather4"></span>
             </p>
-            <p class="future-temp">气温：<span id="future-temp4">2℃~14℃</span></p>
+            <p class="future-temp">气温：
+                <span id="future-temp4"></span>
+            </p>
             <p class="future-wind">风力：
-                <span id="future-wind4">南风微风</span>
+                <span id="future-wind4"></span>
             </p>
         </div>
         <div class="future-item">
-            <h2 class="future-data" id="future-data5">2017年11月14日</h2>
-            <p class="future-week" id="future-week5">星期二</p>
+            <h2 class="future-data" id="future-data5"></h2>
+            <p class="future-week" id="future-week5"></p>
             <p class="future-weather">天气：
-                <span id="future-weather5">多云</span>
+                <span id="future-weather5"></span>
             </p>
-            <p class="future-temp">气温：<span id="future-temp5">2℃~14℃</span></p>
+            <p class="future-temp">气温：
+                <span id="future-temp5"></span>
+            </p>
             <p class="future-wind">风力：
-                <span id="future-wind5">南风微风</span>
+                <span id="future-wind5"></span>
             </p>
         </div>
     </div>

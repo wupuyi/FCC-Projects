@@ -52,10 +52,68 @@ function getWeather(cityname) {
         })
 }
 
+// 获取省份
+function getProvince() {
+    $
+        .getJSON('city.json', function (data) {
+            var provinces = data.provinces,
+                selectVal = ''
+            for (var i = 0; i < provinces.length; i++) {
+                selectVal = provinces[i]['provinceName'];
+                addOption('#proSelect', selectVal);
+            }
+        });
+}
+
+// 添加<option value=""></option>
+function addOption(selector, str) {
+    $(selector).append('<option value="' + str + '">' + str + '</option>');
+}
+
+//删除<option value=""></option>
+function removeOption(selector) {
+    $(selector).html('');
+    $(selector).append('<option value="">请选择城市</option>')
+}
+
+//获取城市
+function getCity(str) {
+    removeOption('#citySelect');
+    $.getJSON('city.json', function (data) {
+        var provinces = data.provinces,
+            // city = data.
+            selectVal = '',
+            citys = [],
+            proNum,
+            arr = [];
+        for (var i = 0; i < provinces.length; i++) {
+            selectVal = provinces[i]['provinceName'];
+            arr.push(selectVal);
+        }
+        //查询省份index
+        proNum = arr.indexOf(str);
+        console.log(proNum);
+        citys = provinces[proNum]['citys'];
+        console.log(citys);
+        for (var j = 0; j < citys.length; j++) {
+            selectVal = citys[j]['citysName'];
+            addOption('#citySelect', selectVal);
+        }
+    });
+
+}
+
 $(function () {
-    var myCity = new BMap.LocalCity();
-    myCity.get(function(r) {
-        var cityname = r.name;
-        getWeather(cityname);
+    getProvince();
+    getCity('河北省');
+    // var myCity = new BMap.LocalCity(); myCity.get(function(r) {     var cityname
+    // = r.name;     getWeather(cityname); })
+    $('#proSelect').change(function () {
+        var val = $('#proSelect').val();
+        getCity(val);
+    });
+    $('#citySelect').change(function () {
+        var val = $('#citySelect').val();
+        getWeather(val);
     })
 });
