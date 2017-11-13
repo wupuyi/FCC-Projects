@@ -66,11 +66,12 @@ body {
     transition: font-size 0.5s;
 }
 
-.quote .quote-container .buttons button:hover{
+.quote .quote-container .buttons button:hover {
     opacity: 0.8;
     cursor: pointer;
     font-size: 1.5em;
 }
+
 .quote .footer {
     color: #ffffff;
     text-align: center;
@@ -80,4 +81,25 @@ body {
 .quote .footer a {
     color: #ffffff;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .quote .quote-container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    .quote .quote-container .buttons {
+        text-align: center;
+    }
+    .quote .quote-container .buttons .button i {
+        font-size: 2.0em;
+    }
+    .quote .quote-container .buttons button {
+        border: none;
+        float: none;
+    }
+    .quote .quote-container .buttons button:hover {
+        font-size: 1.0em;
+    }
 }
