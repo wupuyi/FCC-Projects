@@ -9,7 +9,7 @@ function dateStr(str) {
 // 获取天气
 function getWeather(cityname) {
     $
-        .getJSON('http://v.juhe.cn/weather/index?callback=?', {
+        .getJSON('https://v.juhe.cn/weather/index?callback=?', {
             'cityname': cityname,
             'dtype': 'json',
             'key': 'ea0c38d4e444dfb8911a0c29f7a4725e'
