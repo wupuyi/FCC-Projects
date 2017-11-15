@@ -19,10 +19,10 @@ $(function () {
                         var r = response.query.pages[index];
                         if (r.thumbnail) {
                             var src = r.thumbnail.source;
-                            result += '<div class="result-content"><h2><a href="https://en.wikipedia.org/wiki/"' + encodeURIComponent(r.title) + '>' + r.title + '</a></h2><img src="' + src + '"><p>' + r.extract + '</p></div>';
+                            result += '<div class="result-content"><h2><a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(r.title) + '">' + r.title + '</a></h2><img src="' + src + '"><p>' + r.extract + '</p></div>';
 
                         } else {
-                            result += '<div class="result-content"><h2><a href="https://en.wikipedia.org/wiki/"' + encodeURIComponent(r.title) + '>' + r.title + '</a></h2><p>' + r.extract + '</p></div>';
+                            result += '<div class="result-content"><h2><a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(r.title) + '">' + r.title + '</a></h2><p>' + r.extract + '</p></div>';
                         }
                     }
                     $('.result').append($(result)).slideDown(500);
