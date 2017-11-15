@@ -1,0 +1,132 @@
+body {
+    /* background: #86ddec; */
+    /* background: #36597f; */
+    background: #2e4d86;
+}
+
+.container {
+    margin: 20px;
+}
+
+.container .search {
+    text-align: center;
+}
+
+.container .search i.logo,
+.container .search h1 {
+    color: #ffffff;
+}
+
+.container .search i.logo {
+    font-size: 150px;
+}
+
+.container .search h1 {
+    font-weight: normal;
+}
+
+.container .search form {
+    font-size: 0;
+}
+
+.container .search form input {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.container .search form input,
+.container .search form button {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+.container .search form button {
+    cursor: pointer;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    width: 100px;
+    color: #777575;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .search form button:hover,
+.container .search form button a:hover {
+    /* border: 1px solid #cccccc; */
+    color: #000000;
+}
+
+.container .search form button:nth-child(4) {
+    margin-left: 20px;
+}
+
+.container .search form button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration-line: none;
+    color: #777575
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result .result-content {
+    width: 60%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333333;
+}
+
+.result .result-content:hover {
+    background: #dddddd;
+}
+
+.result .result-content h2 {
+    font-size: 1.2em;
+    /* font-weight: normal; */
+    margin-top: 0;
+}
+
+.result .result-content h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.result .result-content h2 a:hover {
+    text-decoration: underline;
+}
+.result .result-content img {
+    float: left;
+    margin-right: 10px;
+}
+
+.result .result-content p {
+    text-align: justify;
+    /* float: left; */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 auto;
+        /* padding: 20px; */
+        width: 90%;
+    }
+    .container .search i.logo {
+        font-size: 100px;
+    }
+    .container .search form input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .result .result-content {
+        width: 100%;
+    }
+}
