@@ -11,3 +11,7 @@
 ## 03 Show the Local Weather
 
 [https://wupuyi.github.io/FCC-Projects/03-Show-the-Local-Weather/](https://wupuyi.github.io/FCC-Projects/03-Show-the-Local-Weather/)
+
+## 04 Build a Wikipedia Viewer
+
+[https://wupuyi.github.io/FCC-Projects/04-Build-a-Wikipedia-Viewer](https://wupuyi.github.io/FCC-Projects/04-Build-a-Wikipedia-Viewer)
