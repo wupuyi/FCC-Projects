@@ -1,20 +1,33 @@
-function rot13(str) { // LBH QVQ VG!
-  // 请把你的代码写在这里
-  var arr = str.split(' ');
-  var newArr = arr.map(function (e) {
-    return e.split('').map(function (e) {
-      if (e.charCodeAt() >= 65 && e.charCodeAt() <= 90) {
-        if (e.charCodeAt() < 78) {
-          return String.fromCharCode(e.charCodeAt() + 13);
-        } else {
-          return String.fromCharCode(e.charCodeAt() - 13);
+function sumFibs(num) {
+    var newArr = [];
+    var arr = [1, 1];
+    var temp,
+        result;
+    if (num <= 1) {
+        result = 1;
+    } else {
+        newArr = [].concat(arr);
+        while (arr[1] < num) {
+            temp = arr.reduce(function (a, b) {
+                return a + b;
+            });
+            newArr.push(temp);
+            arr.shift();
+            arr.push(temp);
         }
-      } else {
-        return e;
-      }
-    }).join('');
-  });
-  return newArr.join(' ');
+        console.log(newArr);
+        newArr = newArr.filter(function (e) {
+            return e % 2 !== 0 && e <= num;
+        });
+        console.log(newArr);
+        result = newArr.reduce(function (a, b) {
+            return a + b;
+        });
+    }
+    console.log(result);
+    return result;
 }
+// sumFibs(1);
 
-console.log(rot13("SERR PBQR PNZC?")); // 你可以修改这一行来测试你的代码
+sumFibs(75025);
+sumFibs(75024);
