@@ -1,0 +1,43 @@
+body {
+    min-width: 1200px;
+}
+
+div.navbar-right {
+    margin-right: 10px;
+}
+
+div.navbar-right ul {
+    margin-right: 0;
+}
+
+main {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-left {
+    width: 230px;
+}
+
+.main-right {
+    width: 900px;
+    margin-left: 30px;
+}
+
+.main-right .caption {
+    font-weight: bold;
+}
+
+.main-right .caption h3,
+.main-right .caption h4 {
+    font-weight: 750;
+}
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
